@@ -2,6 +2,7 @@
 
 # Uso
 '/' Para mostrar el listado de los post
+
 '/:id' Para ver un post en concreto
 
 Api para post: '/api/post' 
