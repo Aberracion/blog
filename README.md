@@ -22,8 +22,11 @@ Ejemplo del json:
 # Mejoras pendientes
 
 1.- Autenticación en la web.
+
 2.- Que el autor se guarde a partir del usuario que ha accedido
+
 3.- Mocks en los tests
+
 4.- Mejora en las vistas
 
 
