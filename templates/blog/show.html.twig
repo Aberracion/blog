@@ -1,0 +1,33 @@
+
+{% block title %}Post{% endblock %}
+
+{% block body %}
+    <h1>Post</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ post.id }}</td>
+            </tr>
+            <tr>
+                <th>Subject</th>
+                <td>{{ post.subject }}</td>
+            </tr>
+            <tr>
+                <th>Body</th>
+                <td>{{ post.body }}</td>
+            </tr>
+            <tr>
+                <th>Created_at</th>
+                <td>{{ post.createdAt ? post.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Author</th>
+                <td>{{ post.author.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_blog_index') }}">back to list</a>
+{% endblock %}
